@@ -1,0 +1,102 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif; /* خط عصري */
+    background-color: #f0f4f8; /* لون الخلفية الفاتح */
+    margin: 0;
+    padding: 0;
+    color: #333; /* لون النص */
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* تدرج لوني جذاب */
+    color: white; /* لون النص */
+    padding: 20px 0; /* مسافة داخلية */
+    text-align: center; /* مركز النص */
+}
+
+/* قائمة التنقل */
+nav {
+    margin: 15px 0; /* مسافة خارجية */
+}
+
+nav a {
+    color: white; /* لون الروابط */
+    text-decoration: none; /* إزالة التسطير */
+    margin: 0 20px; /* مسافة بين الروابط */
+    padding: 10px 15px; /* مسافة داخلية */
+    border-radius: 5px; /* زوايا مدورة */
+    transition: background-color 0.3s; /* تأثير تغيير اللون */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* لون الخلفية عند التحويم */
+}
+
+/* قسم الصفحة */
+section {
+    background-color: #ffffff; /* خلفية بيضاء */
+    margin: 20px auto; /* تمركز القسم */
+    padding: 30px; /* مسافة داخلية */
+    border-radius: 15px; /* زوايا مدورة */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    max-width: 900px; /* الحد الأقصى للعرض */
+}
+
+/* عناوين الأقسام */
+h1, h2 {
+    color: #6a11cb; /* لون مميز للعناوين */
+}
+
+/* قائمة المهارات */
+ul {
+    list-style-type: none; /* إزالة النقط من القائمة */
+    padding: 0; /* إزالة الحواف */
+}
+
+li {
+    background-color: #e3f2fd; /* لون خلفية العناصر */
+    margin: 10px 0; /* مسافة بين العناصر */
+    border-radius: 10px; /* زوايا مدورة */
+    padding: 15px; /* مسافة داخلية */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    transition: transform 0.3s, background-color 0.3s; /* تأثيرات التحويل */
+}
+
+li:hover {
+    background-color: #bbdefb; /* تغيير اللون عند التحويم */
+    transform: translateY(-3px); /* تأثير الرفع عند التحويم */
+}
+
+/* قسم تتبع التقدم */
+#progress {
+    display: flex; /* استخدام الفليكس */
+    flex-direction: column; /* تنظيم العمود */
+    align-items: center; /* محاذاة العناصر في المركز */
+}
+
+/* زر إضافة تقدم جديد */
+button {
+    background-color: #ff4081; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    padding: 10px 20px; /* مسافة داخلية */
+    border-radius: 5px; /* زوايا مدورة */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    transition: background-color 0.3s; /* تأثير تغيير اللون */
+}
+
+button:hover {
+    background-color: #f50057; /* لون الخلفية عند التحويم */
+}
+
+/* تذييل الصفحة */
+footer {
+    text-align: center; /* مركز النص */
+    padding: 15px 0; /* مسافة داخلية */
+    background-color: #6a11cb; /* لون خلفية التذييل */
+    color: white; /* لون النص */
+    position: relative; /* تحديد الموضع */
+    bottom: 0; /* التذييل في الأسفل */
+    width: 100%; /* عرض كامل */
+}
