@@ -1,102 +1,117 @@
-/* إعدادات عامة */
+/* إعدادات الجسم */
 body {
-    font-family: 'Arial', sans-serif; /* خط عصري */
-    background-color: #f0f4f8; /* لون الخلفية الفاتح */
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #f0f0f0;
     margin: 0;
     padding: 0;
-    color: #333; /* لون النص */
 }
 
-/* رأس الصفحة */
+/* إعدادات العنوان الرئيسي */
 header {
-    background: linear-gradient(90deg, #6a11cb, #2575fc); /* تدرج لوني جذاب */
-    color: white; /* لون النص */
-    padding: 20px 0; /* مسافة داخلية */
-    text-align: center; /* مركز النص */
+    background-color: #e60023;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
-/* قائمة التنقل */
+/* إعدادات التنقل */
 nav {
-    margin: 15px 0; /* مسافة خارجية */
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
 }
 
 nav a {
-    color: white; /* لون الروابط */
-    text-decoration: none; /* إزالة التسطير */
-    margin: 0 20px; /* مسافة بين الروابط */
-    padding: 10px 15px; /* مسافة داخلية */
-    border-radius: 5px; /* زوايا مدورة */
-    transition: background-color 0.3s; /* تأثير تغيير اللون */
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 0.95em;
+    transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* لون الخلفية عند التحويم */
+    color: #e60023;
+    transform: scale(1.05);
 }
 
-/* قسم الصفحة */
+/* إعدادات الأقسام */
 section {
-    background-color: #ffffff; /* خلفية بيضاء */
-    margin: 20px auto; /* تمركز القسم */
-    padding: 30px; /* مسافة داخلية */
-    border-radius: 15px; /* زوايا مدورة */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-    max-width: 900px; /* الحد الأقصى للعرض */
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 700px;
+    background: #262626;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* عناوين الأقسام */
-h1, h2 {
-    color: #6a11cb; /* لون مميز للعناوين */
+/* إعدادات عناوين الأقسام */
+h2 {
+    font-size: 1.4em;
+    color: #e60023;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e60023;
+    padding-bottom: 8px;
 }
 
-/* قائمة المهارات */
+/* إعدادات القوائم */
 ul {
-    list-style-type: none; /* إزالة النقط من القائمة */
-    padding: 0; /* إزالة الحواف */
+    list-style-type: none;
+    padding: 0;
 }
 
-li {
-    background-color: #e3f2fd; /* لون خلفية العناصر */
-    margin: 10px 0; /* مسافة بين العناصر */
-    border-radius: 10px; /* زوايا مدورة */
-    padding: 15px; /* مسافة داخلية */
-    cursor: pointer; /* تغيير شكل المؤشر */
-    transition: transform 0.3s, background-color 0.3s; /* تأثيرات التحويل */
+ul li {
+    background-color: #333;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
 }
 
-li:hover {
-    background-color: #bbdefb; /* تغيير اللون عند التحويم */
-    transform: translateY(-3px); /* تأثير الرفع عند التحويم */
+ul li:hover {
+    background-color: #4d4d4d;
+    transform: translateY(-3px);
 }
 
-/* قسم تتبع التقدم */
-#progress {
-    display: flex; /* استخدام الفليكس */
-    flex-direction: column; /* تنظيم العمود */
-    align-items: center; /* محاذاة العناصر في المركز */
-}
-
-/* زر إضافة تقدم جديد */
+/* إعدادات الأزرار */
 button {
-    background-color: #ff4081; /* لون خلفية الزر */
-    color: white; /* لون النص */
-    border: none; /* إزالة الحدود */
-    padding: 10px 20px; /* مسافة داخلية */
-    border-radius: 5px; /* زوايا مدورة */
-    cursor: pointer; /* تغيير شكل المؤشر */
-    transition: background-color 0.3s; /* تأثير تغيير اللون */
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #f50057; /* لون الخلفية عند التحويم */
+    background-color: #ff3333;
+    transform: translateY(-3px);
 }
 
-/* تذييل الصفحة */
+/* إعدادات التذييل */
 footer {
-    text-align: center; /* مركز النص */
-    padding: 15px 0; /* مسافة داخلية */
-    background-color: #6a11cb; /* لون خلفية التذييل */
-    color: white; /* لون النص */
-    position: relative; /* تحديد الموضع */
-    bottom: 0; /* التذييل في الأسفل */
-    width: 100%; /* عرض كامل */
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.85em;
+    margin-top: 20px;
+    border-top: 3px solid #e60023;
+}
+
+footer a {
+    color: #e60023;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
